@@ -88,7 +88,7 @@ if (numCorrect == myQuestions.length) {
 } else  {
   resultText.innerHTML = 'Der er plads til forbedring. Du bør tage et kursus i Plan2Learn om roller eller et læse Rollekataloget?'
 } 
-
+    submitButton.style.display = 'none';
     restartButton.style.display = 'inline-block';
     rolleKatalogImg.style.display = 'inline-block';
     QRrolleKatalogImg.style.display = 'inline-block';
