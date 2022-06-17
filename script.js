@@ -52,28 +52,43 @@
       // find selected answer
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
-      const userInput = answerContainer.querySelector(selector).parentElement;
+      const userInput = answerContainer.querySelector(selector);
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
       // if answer is correct
-      if(userAnswer === currentQuestion.correctAnswer){
+      if(userAnswer == currentQuestion.correctAnswer){
         // add to the number of correct answers
         numCorrect++;
 
         // color the answers green
         //answerContainers[questionNumber].style.color = 'lightgreen';
-        userInput.style.color = 'lightgreen';
+        if (userInput != null) {
+        userInput.parentElement.style.color = 'lightgreen';
+      }
       }
       // if answer is wrong or blank
-      else if (userAnswer != ''){
+      else {//if (userAnswer != ''){
         // color the answers red
         //answerContainers[questionNumber].style.color = 'red';
-        userInput.style.color = 'red';
+        if (userInput != null) {
+
+        userInput.parentElement.style.color = 'red';
+        }
       }
     });
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = `Du svarede rigtigt på ${numCorrect} ud af ${myQuestions.length}`;
+if (numCorrect == myQuestions.length) {
+  resultText.innerHTML = 'Super, du har fuldstændig styr på rollerne!'
+} else if (numCorrect == (myQuestions.length -1)) {
+  resultText.innerHTML = 'Flot, du har næsten styr på rollerne! Vil du helt i top kan du lære mere om roller i Plan2Learn eller Rollekataloget.'
+} else if (numCorrect == (myQuestions.length -2)) {
+  resultText.innerHTML = 'OK, du har nogenlunde styr på rollerne! overvej om ikke du bør lære lidt mere om roller i Plan2Learn eller Rollekataloget.'
+} else  {
+  resultText.innerHTML = 'Der er plads til forbedring. Du bør tage et kursus i Plan2Learn om roller eller et læse Rollekataloget?'
+} 
+
     restartButton.style.display = 'inline-block';
     rolleKatalogImg.style.display = 'inline-block';
     QRrolleKatalogImg.style.display = 'inline-block';
@@ -116,6 +131,7 @@
   // Variables
   const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
+  const resultText = document.getElementById('resultText');
   const submitButton = document.getElementById('submit');
   const myQuestions = [
     {
