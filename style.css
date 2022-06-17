@@ -12,19 +12,19 @@ h1{
   font-weight: 300;
   margin: 0px;
   padding: 10px;
-  font-size: 48px;
+  font-size: 64px;
   background-color: rgb(207, 40, 165);
   color: #fff;
 }
-.question{
-  font-size: 36px;
+#results,#resultText,.question{
+  font-size: 48px;
   margin-bottom: 20px;
 }
 .answers {
   margin-bottom: 30px;
   text-align: left;
   display: inline-block;
-  font-size: 30px;
+  font-size: 48px;
 }
 .answers label{
   display: block;
@@ -65,6 +65,6 @@ button:hover{
 }
 .quiz-container{
   position: relative;
-  height: 250px;
+  height: 450px;
   margin-top: 40px;
 }
