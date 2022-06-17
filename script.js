@@ -84,7 +84,7 @@ if (numCorrect == myQuestions.length) {
 } else if (numCorrect == (myQuestions.length -1)) {
   resultText.innerHTML = 'Flot, du har næsten styr på rollerne! Vil du helt i top kan du lære mere om roller i Plan2Learn eller Rollekataloget.'
 } else if (numCorrect == (myQuestions.length -2)) {
-  resultText.innerHTML = 'OK, du har nogenlunde styr på rollerne! overvej om ikke du bør lære lidt mere om roller i Plan2Learn eller Rollekataloget.'
+  resultText.innerHTML = 'OK, du har nogenlunde styr på rollerne! Overvej om ikke du bør lære lidt mere om roller i Plan2Learn eller Rollekataloget.'
 } else  {
   resultText.innerHTML = 'Der er plads til forbedring. Du bør tage et kursus i Plan2Learn om roller eller et læse Rollekataloget?'
 } 
