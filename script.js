@@ -65,7 +65,7 @@
         userInput.style.color = 'lightgreen';
       }
       // if answer is wrong or blank
-      else if (userAnswer != ''){
+      else if (userAnswer != '') {
         // color the answers red
         //answerContainers[questionNumber].style.color = 'red';
         userInput.style.color = 'red';
