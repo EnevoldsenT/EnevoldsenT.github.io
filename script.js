@@ -119,7 +119,7 @@
   const submitButton = document.getElementById('submit');
   const myQuestions = [
     {
-      question: "Hvem har ansvar for journalisering af kontrakt, kontrol af betalinger, faktura og kontraktindhold",
+      question: "Hvem har ansvaret for journalisering af kontrakt, kontrol af betalinger, faktura og kontraktindhold?",
       answers: {
         a: "Systemejer",
         b: "Systemadministrator",
@@ -129,30 +129,50 @@
       correctAnswer: "a"
     },
     {
-      question: "Hvis opgave er det, at sørge for at systemet fungerer, administreres of supporteres?",
-      answers: {
-        a: "Systemejer",
-        b: "Systemadministrator",
-        c: "Superbruger",
-        d: "Brugeransvarlig"
-      },
-      correctAnswer: "b"
-    },
-    {
       question: "Hvem er ansvarlig for, at medarbejderne har de fornødne kompetancer til at anvende et it-system?",
       answers: {
         a: "Systemejer",
-        b: "Systemadministrator",
+        b: "Systemaansvarlig",
         c: "Leder",
         d: "Brugeransvarlig"
       },
       correctAnswer: "c"
     },
     {
-      question: "Hvis der er en databehandlerkonstruktion, hvem har så ansvaret for at der foreligger en databehandleraftale og der føres tilsyn?",
+      question: "Hvis opgave er det, at sørge for at systemet fungerer, administreres og supporteres?",
+      answers: {
+        a: "Systemejer",
+        b: "Systemaansvarlig",
+        c: "Superbruger",
+        d: "Brugeransvarlig"
+      },
+      correctAnswer: "b"
+    },
+    {
+      question: "Hvem har ansvaret for at der er økonomi til indkøb og drift af et it-system?",
       answers: {
         a: "Systemejer",
         b: "Systemadministrator",
+        c: "Leder",
+        d: "IT-indkøbsansvarlig"
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Hvilken rolle hjælper brugerne i det daglige og tager kontakt til den systemansvarlige ved fejl?",
+      answers: {
+        a: "Systemejer",
+        b: "Superbruger",
+        c: "Leder",
+        d: "Brugeransvarlig"
+      },
+      correctAnswer: "b"
+    },
+        {
+      question: "Hvis der er en databehandlerkonstruktion, hvem har så ansvaret for, at der foreligger en databehandleraftale og der føres tilsyn?",
+      answers: {
+        a: "Systemejer",
+        b: "Systemaansvarlig",
         c: "Leder",
         d: "Systemadministrator"
       },
